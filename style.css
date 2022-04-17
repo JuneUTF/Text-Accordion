@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+#accordion {
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+#accordion h3 {
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 7px 5px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 7px 5px;
+  line-height: 50px;
+  background-color: #457980;
+  border-radius: 5px;
+  color: white;
+}
+
+#accordion .accordion .accordion-title {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  position: relative;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+#accordion .accordion .accordion-title h5 {
+  padding-left: 25px;
+  pointer-events: none;
+}
+
+#accordion .accordion .accordion-title .icondown {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  line-height: 40px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  pointer-events: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#accordion .accordion .accordion-title .active {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#accordion .accordion .accordion-text {
+  overflow: hidden;
+  height: 0;
+}
+
+#accordion .accordion .isshow {
+  height: 100%;
+  padding: 10px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 5px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 5px 0px;
+}
+
+@media only screen and (max-width: 414px) {
+  #accordion {
+    width: 100%;
+    padding: 0;
+  }
+  #accordion h3 {
+    border-radius: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 412px) {
+  #accordion {
+    padding: 20px 0;
+    width: 500px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
