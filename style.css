@@ -43,13 +43,13 @@
 #accordion .accordion .accordion-title .icondown {
   position: absolute;
   right: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   top: 0;
   line-height: 40px;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   pointer-events: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 #accordion .accordion .accordion-title .active {
@@ -61,12 +61,12 @@
 
 #accordion .accordion .accordion-text {
   overflow: hidden;
+  padding: 0 10px;
   height: 0;
-}
-
-#accordion .accordion .isshow {
-  height: 100%;
-  padding: 10px;
+  border-radius: 10px;
+  line-height: 2;
+  -webkit-transition: height 0.3s ease-in;
+  transition: height 0.3s ease-in;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 5px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 5px 0px;
 }

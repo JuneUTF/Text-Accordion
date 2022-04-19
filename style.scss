@@ -35,11 +35,11 @@
             .icondown {
                 position: absolute;
                 right: 25px;
+                transition: 0.3s;
                 top: 0;
                 line-height: 40px;
                 transform: rotate(0deg);
                 pointer-events: none;
-                transition: 0.3s;
             }
             .active {
                 transform: rotate(-90deg);
@@ -48,13 +48,14 @@
         }
         .accordion-text {
             overflow: hidden;
+            padding: 0 10px;
             height: 0;
-        }
-        .isshow {
-            height: 100%;
-            padding: 10px;
+            border-radius: 10px;
+            line-height: 2;
+            transition: height 0.3s ease-in;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 5px 0px;
         }
+        .isshow {}
     }
 }
 
